@@ -14,7 +14,6 @@ Future Enhancements
 
 **Introduction**
 This project digitizes the daily operations of an orphanage, including child admission management, attendance tracking, and donation records. It replaces manual record-keeping with a simple, efficient web application built using PHP, MySQL, HTML, CSS.
-
 **Features**
 1.Admissions Management-Add, modify, and remove student records.
 
