@@ -1,0 +1,339 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Wrapper for Sticky Footer */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the wrapper spans the entire viewport height */
+}
+
+.main-content {
+  flex: 1; /* Makes the main content grow and push the footer to the bottom */
+  padding: 20px;
+  background-color: white;
+}
+
+/* Header Styles */
+.header {
+  background-color: #005bb5;
+  color: white;
+  padding: 10px 20px;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.logo {
+  max-height: 60px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: auto; /* Ensures the footer stays at the bottom */
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+footer p {
+  font-size: 0.9em;
+  color: #bbb;
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: #005bb5;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  max-height: 60px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+}
+
+.welcome-section {
+  margin-bottom: 20px;
+}
+
+.blurb {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.featured-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.achievements {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.achievements h2 {
+  margin-bottom: 15px;
+  color: #005bb5;
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+footer p {
+  font-size: 0.9em;
+  color: #bbb;
+  text-align: center;
+}
+
+/* Form Section */
+.form-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h1 {
+  margin-bottom: 20px;
+  color: #005bb5;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form label {
+  font-weight: bold;
+}
+
+.form input,
+.form select,
+.form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  width: 100%;
+}
+
+.form button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #005bb5;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.form button:hover {
+  background-color: #004494;
+}
+
+/* Donation Page Specific */
+.donation-blurb {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Attendance Page Styling */
+.attendance-table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.attendance-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.attendance-row input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.attendance-row label {
+  font-size: 1em;
+  color: #333;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #004494;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Positions below the nav-link */
+  left: 0;
+  background-color: #0073e6;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 150px;
+  padding: 10px 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #004494;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Attendance Table Styles */
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.attendance-table th,
+.attendance-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.attendance-table th {
+  background-color: #005bb5;
+  color: white;
+}
+
+.attendance-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.attendance-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+}
